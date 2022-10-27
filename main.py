@@ -31,7 +31,7 @@ def viaje(estadoAct, estadoHis):
                     viaje(estadoAct, estadoHis)
             estadoAct = [[orillaIzquierdaM, orillaIzquierdaC], [orillaDerechaM, orillaDerechaC], barca]
 
-            # Canival
+            # Canibal
             if orillaIzquierdaC >= 2:
                 estadoAct[0][1] -= 2
                 estadoAct[1][1] += 2
@@ -40,7 +40,7 @@ def viaje(estadoAct, estadoHis):
                     viaje(estadoAct, estadoHis)
             estadoAct = [[orillaIzquierdaM, orillaIzquierdaC], [orillaDerechaM, orillaDerechaC], barca]
 
-            # Misionero Canival
+            # Misionero Canibal
             if orillaIzquierdaM >= 1 and orillaIzquierdaC >= 1:
                 estadoAct[0][0] -= 1
                 estadoAct[0][1] -= 1
@@ -68,7 +68,7 @@ def viaje(estadoAct, estadoHis):
                     viaje(estadoAct, estadoHis)
             estadoAct = [[orillaIzquierdaM, orillaIzquierdaC], [orillaDerechaM, orillaDerechaC], barca]
 
-            # Canival
+            # Canibal
             if orillaDerechaC >= 1:
                 estadoAct[1][1] -= 1
                 estadoAct[0][1] += 1
@@ -85,7 +85,7 @@ def viaje(estadoAct, estadoHis):
                     viaje(estadoAct, estadoHis)
             estadoAct = [[orillaIzquierdaM, orillaIzquierdaC], [orillaDerechaM, orillaDerechaC], barca]
 
-            # Misionero Canival
+            # Misionero Canibal
             if orillaDerechaC >= 1 and orillaDerechaM >= 1:
                 estadoAct[1][1] -= 1
                 estadoAct[0][1] += 1
